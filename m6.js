@@ -31,3 +31,9 @@ contactForm.addEventListener("submit", function (event) {
       contactListUl.appendChild(li);
     });
   }
+
+
+  function deleteContact(index) {
+    contactList.splice(index, 1);
+    updateContactList();
+  }
